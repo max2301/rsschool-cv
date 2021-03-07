@@ -1,29 +1,259 @@
-*{
-	padding: 0;
-	margin: 0;
-	border: 0;
+body{
+    background-color: #292d36;
 }
 
+h1, h2, h3, h4, h5, h6{
+    color: #36c3d7;
+    margin: 0;
+}
+
+/* Container */
 .container{
-    font-size: 17px;
-    padding: 0 15px;
-  }
+    background-color: seashell;
+    margin: 20px auto;
+    width: 1000px;
+    height: 800px;
+}
+/* Triangle */
+.triangle_top_right{
+    width: 0;
+    height: 0;
+    margin-left: auto;
+    border-top: 100px solid #536976;
+    border-left: 150px solid transparent;
+}
 
-  .text{
-    padding-bottom: 15px;
-  }
-  .text::first-letter{
-    padding-left: 20px;
+.triangle_top_left{
+    width: 0;
+    height: 0;
+    margin-left: auto;
+    border-top: 100px solid #36c3d7;
+    border-left: 150px solid transparent;
+}
+
+.triangle_bottom_left{
+    position:absolute;
+	bottom:0;
+    margin-right: auto;
+    border-bottom: 200px solid #36c3d7;
+    border-right: 400px solid transparent;
+}
+/* Aside */
+.aside_left{
+    position:relative;
+    width: 40%;
+    float: left;
+    height: 800px;
+    background-color: #373d57;
+    
+}
+
+.aside_right{
+    width: 60%;
+    height: 800px;
+    float: right;
+}
+
+/* Image */
+.image{
+    display: block;
+    width: 205px;
+    height: 200px;
+    padding: 0;
+    margin: 0 auto;
+    border-radius: 100px;
+}
+
+.image_education{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+/* Section education */
+.section_education{
+  margin: 0 auto;
+}
+
+.header_education{
+    margin: 0 8px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.article_education{
+    text-align: justify;
+    margin: 0 25px;
     font-size: 20px;
-    color: rgb(53, 6, 6);
-  }
+    color: rgb(255, 255, 255);
+}
 
-  .my_avatar{
-    outline: 20px solid rgba(0, 0, 0, 0.6);
-    width: 428px;
-    height: 600px;
+/* Aside right */
+
+.header_aside_right{
+  margin: 0 auto;
+  margin-left: 30px;
+  font-size: 28px;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.section_about_me{
+    border-top: 3px solid #0c0227;
+    border-bottom: 3px solid #0c0227;
+    margin: 15px 30px;
+    text-align: justify;
+}
+
+.text_h2{
+    color:black;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.section_about_me p{
+    width: 100%;
+    font-size: 20px;
+    margin: 5px;
+    
+}
+
+.section_skills_language{
+   height: 230px;
+   border-bottom: 3px solid #0c0227;
+   margin: 0 30px;
+}
+
+.section_skills{
+    width: 49%;;
+    float: left;
+   border-right: 3px solid #0c0227;
+}
+
+.section_language{
+    width: 50%;;
+    float: right;
+}
+/* List skills */
+.ul_skills{
+    margin-right: 30px;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.ul_skills li{
+    border-bottom: 4px solid #000;
     position: relative;
-    bottom: 560px;
-    left: 100px;
-    box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.5);
-  }
+    border-color: #536976;
+    list-style-type:square;
+}
+
+.ul_language li{
+    list-style-type:square;
+    font-size: 20px;
+}
+
+.C:before{
+    content: "";
+    display: block;
+    width: 140px;
+    height: 4px;
+    background-color: aqua;
+    position: absolute;
+    bottom: -4px;
+}
+
+.JS:before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 4px;
+    background-color: aqua;
+    position: absolute;
+    bottom: -4px;
+}
+
+.HTML:before{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 4px;
+    background-color: aqua;
+    position: absolute;
+    bottom: -4px;
+}
+
+.CSS:before{
+    content: "";
+    display: block;
+    width: 160px;
+    height: 4px;
+    background-color: aqua;
+    position: absolute;
+    bottom: -4px;
+}
+
+.MySQL:before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 4px;
+    background-color: aqua;
+    position: absolute;
+    bottom: -4px;
+}
+
+/* Icon */
+
+.icon_vk{
+   height: 60px;
+   width: 60px;
+   border-radius: 10px;
+}
+
+.icon_tel{  
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+}
+
+.icon_github{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+}
+
+.icon_gmail{
+   height: 60px;
+   width: 75px;
+   border-radius: 10px;
+}
+
+.icon_rss{
+    height: 60px;
+    width: 120px;
+}
+
+/* List contacts*/
+.ul_contacts{
+    padding: 20px 20px 0;
+    margin: 0 auto;
+}
+
+.ul_contacts li{ 
+    margin-left: 30px;
+    list-style-type: none;
+    display: inline;
+}
+ 
+.contacts{
+    height: 170px;
+}
+
+.text_created{
+    margin-top: 30px;
+    text-align: center;
+    color: #000000;
+}
